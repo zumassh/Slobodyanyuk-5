@@ -1,0 +1,9 @@
+<div>
+  <h2>Получить контакт по ID</h2>
+  <input [(ngModel)]="contactId" placeholder="Введите ID контакта" name="contactId">
+  <button (click)="getContact()">Получить контакт</button>
+  <div *ngIf="contact">
+    <h3>{{ contact.name }}</h3>
+    <p>{{ contact.phone }}</p>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div>
+  <h2>Добавить контакт</h2>
+  <form (submit)="addContact()">
+    <label>
+      Имя:
+      <input [(ngModel)]="name" name="name">
+    </label>
+    <br>
+    <label>
+      Номер:
+      <textarea [(ngModel)]="phone" name="phone"></textarea>
+    </label>
+    <br>
+    <button type="submit">Добавить контакт</button>
+  </form>
+</div>
